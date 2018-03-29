@@ -51,6 +51,6 @@ public class MainPresenter extends BasePresenter implements Presenter {
     }
 
     public void startButtonPressed() {
-        getNavigator().navigateToRulersActivity(screen.getScreenContext());
+        screen.checkDrawOverlayPermission();
     }
 }

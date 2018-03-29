@@ -5,4 +5,5 @@ package com.example.christoforos.onscreenrulers.screens;
  */
 
 public interface MainScreen extends BaseScreen {
+    void checkDrawOverlayPermission();
 }

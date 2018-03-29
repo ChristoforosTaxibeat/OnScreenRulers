@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.christoforos.onscreenrulers.components.activities.MainActivity;
-import com.example.christoforos.onscreenrulers.components.activities.RulersActivity;
 
 /**
  * Created by christoforos on 29/03/2018.
@@ -27,13 +26,6 @@ public class Navigator {
     public void navigateToMainActivity(Context context) {
         if (context != null) {
             Intent intent = MainActivity.getCallingIntent(context);
-            context.startActivity(intent);
-        }
-    }
-
-    public void navigateToRulersActivity(Context context) {
-        if (context != null) {
-            Intent intent = RulersActivity.getCallingIntent(context);
             context.startActivity(intent);
         }
     }

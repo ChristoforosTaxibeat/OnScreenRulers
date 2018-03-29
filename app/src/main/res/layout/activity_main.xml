@@ -6,16 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.christoforos.onscreenrulers.components.activities.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
     <FrameLayout
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
@@ -32,8 +22,29 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Start Rulers"
+            android:text="Start"
             android:textColor="@color/colorPrimaryDark" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/endButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Stop"
+            android:textColor="@color/colorAccent" />
     </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
