@@ -26,6 +26,16 @@ public class RulersActivity extends BaseActivity implements RulersScreen {
         initPresenter();
     }
 
+    @Override
+    public Context getAppContext() {
+        return getApplicationContext();
+    }
+
+    @Override
+    public Context getScreenContext() {
+        return this;
+    }
+
     private void initViews() {
     }
 

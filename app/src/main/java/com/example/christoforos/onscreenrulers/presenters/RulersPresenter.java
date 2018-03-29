@@ -1,5 +1,6 @@
 package com.example.christoforos.onscreenrulers.presenters;
 
+import com.example.christoforos.onscreenrulers.screens.BaseScreen;
 import com.example.christoforos.onscreenrulers.screens.RulersScreen;
 
 /**
@@ -42,5 +43,10 @@ public class RulersPresenter extends BasePresenter implements Presenter {
     @Override
     public void destroy() {
 
+    }
+
+    @Override
+    protected BaseScreen getScreen() {
+        return screen;
     }
 }

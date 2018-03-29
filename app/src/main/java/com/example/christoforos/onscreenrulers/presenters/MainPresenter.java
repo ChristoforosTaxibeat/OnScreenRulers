@@ -1,5 +1,6 @@
 package com.example.christoforos.onscreenrulers.presenters;
 
+import com.example.christoforos.onscreenrulers.screens.BaseScreen;
 import com.example.christoforos.onscreenrulers.screens.MainScreen;
 
 /**
@@ -42,5 +43,14 @@ public class MainPresenter extends BasePresenter implements Presenter {
     @Override
     public void destroy() {
 
+    }
+
+    @Override
+    protected BaseScreen getScreen() {
+        return screen;
+    }
+
+    public void startButtonPressed() {
+        getNavigator().navigateToRulersActivity(screen.getScreenContext());
     }
 }
